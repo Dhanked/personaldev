@@ -9,10 +9,16 @@ public class VFLoginFlowController {
     
     
     public VFLoginFlowController (){
-          
-          coderend = true;
-          email = getEmail();
-          code = codeGenerator();
+        try {
+            coderend = true;
+            email = getEmail();
+            code = codeGenerator();
+        } catch (Exception e) {
+
+        } finally {
+
+        }
+
          // SendEmail();
           /*Auth.SessionManagement.FinishLoginFlow();
        return new PageReference(startURL);*/
