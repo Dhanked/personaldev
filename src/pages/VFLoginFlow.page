@@ -1,0 +1,29 @@
+<apex:page showHeader="false" controller="VFLoginFlowController"  docType="html-5.0"  action="{!SendEmail}" >
+  
+  <!--<apex:form >
+    <apex:commandButton action="{!FinishLoginFlowHome}" value="Finish and Go to Home"/>
+    <apex:commandButton action="{!FinishLoginFlowStartUrl}" value="Finish and Go to StartUrl"/>-->
+  <apex:stylesheet value="{!URLFOR($Resource.styleVF, 'css/styles.css')}"/>
+    <apex:form >
+  
+        <div class="wrapper">
+            <div class="inside">
+             <apex:outputPanel id="codePanel"  rendered="{!coderend}">
+                <h2>Email Confirmation</h2>
+               
+                <div class="form">
+                    <apex:pageMessages id="error"/>
+                  Enter Code <br/>
+                      <apex:input value="{!inputCodeValue}" type="text"  label="Enter Code"/>
+                </div>
+                <div id="login-option">
+                    <apex:commandButton action="{!FinishLoginFlowStartUrl}" value="Submit"/>
+                </div>
+                </apex:outputPanel> 
+            </div>
+            
+        </div> <!-- .wrapper -->
+        
+        <br/>
+    </apex:form>
+</apex:page>

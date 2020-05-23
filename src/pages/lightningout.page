@@ -1,0 +1,21 @@
+<apex:page >
+    <apex:includeLightning />
+   
+    <div id="LcDisplayId"></div> 
+    
+ <script>
+      // Here 'VfApp' Is Lightning Application Name
+    $Lightning.use("c:contactOutVF", function() {
+      /* 'LcForVf' is Lightning Component Name which we are Displaying In Vf Page 
+       * syntax for create lightning component dynamically :
+       * $Lightning.createComponent(String type, Object attributes, String locator, function callback) */
+    $Lightning.createComponent("c:contactLightningOut",
+    { 
+      },
+   "LcDisplayId",
+    function(component) {
+         alert ("work done");
+    });
+ });
+ </script>
+</apex:page>
