@@ -14,7 +14,7 @@ public class VFLoginFlowController {
             email = getEmail();
             code = codeGenerator();
         } catch (Exception e) {
-
+            system.debug('testing');
         } finally {
 
         }
