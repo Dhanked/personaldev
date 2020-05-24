@@ -1,6 +1,8 @@
 /**
  * @description taking care of account class final
  * restore previous code
+ * checking everything
+ * new chekc 
 */
 public with sharing class AccountController {
 
