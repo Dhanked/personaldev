@@ -1,5 +1,5 @@
 /**
- * @description taking care of account class
+ * @description taking care of account class final
 */
 public with sharing class AccountController {
 
