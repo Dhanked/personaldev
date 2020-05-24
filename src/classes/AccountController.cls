@@ -1,5 +1,6 @@
 /**
  * @description taking care of account class final
+ * restore previous code
 */
 public with sharing class AccountController {
 
